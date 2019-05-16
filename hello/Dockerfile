@@ -1,4 +1,4 @@
 FROM centos
 ENV name docker
-CMD echo "ENTRYPOINT hello $name"
+CMD ["/bin/echo", "CMD hello $name"]
 ENTRYPOINT echo "ENTRYPOINT hello $name"
